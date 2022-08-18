@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  html,
+  body,
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    font-family: 'Poppins' san-serif;
   }
-  to {
-    transform: rotate(360deg);
+
+  html {
+    scroll-behaviour: smooth;
   }
+
+  body {
+    min-height: 100vh;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1.6rem;
+    background: url('./assets/hero.svg');
+    background-size: cover;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    /* overflow-hidden: hidden; */
+  }
+  .bg{
+    background: url('./assets/phone.svg');
+    background-size: cover;
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+  }
+    .col-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .col-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .col-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
 }
+
+@tailwind components;
+@tailwind utilities;
