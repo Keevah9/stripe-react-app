@@ -1,9 +1,10 @@
 import React from 'react'
 import logo from '../assets/phone.svg'
+import { useGeneralContext } from '../container/Context'
 const Main = () => {
-
+  const {closeSubmenu} = useGeneralContext()
   return (
-    <section className='mx-auto text-black sm:flex justify-between w-full h-full lg:w-4/6 gap-16 py-4 sm:mt-28 items-end '>
+    <section className='mx-auto text-black sm:flex justify-between w-full h-full lg:w-4/6 gap-16 py-4 sm:mt-28 items-end ' onMouseOver={closeSubmenu}>
       <div className='text-center sm:text-left sm:w-2/4 mt-8i sm:mt-0 '>
         <h1 className=' sm:text-left w-full font-bold text-5xl md:text-7xl sm:text-6xl'>
           PAYMENTS <span className=' sm:text-left sm:block'>infrastructure </span>

@@ -14,16 +14,22 @@ export const Menu=()=>{
     const bottom = currentLocation.bottom - 3
     openSubmenu(page, {center, bottom})
   }
+  const handleDisplay =(e)=>{
+    console.log(e.target)
+    if(!e.target.classList.contains('link-btn')){
+      closeSubmenu()
+    }
+  }
   return(
-    <ul className='sm:flex gap-12 justify-center items-center '>
+    <ul className='sm:flex gap-12 justify-center items-center ' onMouseOver={handleDisplay}>
     <li>
-      <button className='px-8' onMouseOver={display}>products</button>
+      <button className='px-8 capitalize link-btn' onMouseOver={display}>products</button>
     </li>
     <li>
-      <button className='px-8' onMouseOver={display}>developers</button>
+      <button className='px-8 capitalize link-btn' onMouseOver={display}>developers</button>
     </li>
     <li>
-      <button className='px-8' onMouseOver={display}>company</button>
+      <button className='px-8 capitalize link-btn' onMouseOver={display}>company</button>
     </li>
   </ul>
   )

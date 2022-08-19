@@ -38,16 +38,16 @@
       background-position: 100% 100%;
       background-repeat: no-repeat;
   }
-    .col-2 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .col-3 {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  
-    .col-4 {
-      grid-template-columns: repeat(4, 1fr);
+    
+      .link-btn {
+          height: 100%;
+          background: transparent;
+          border-color: transparent;
+          font-size: 1.1rem;
+          color: white;
+          text-transform: capitalize;
+          letter-spacing: 1px;
+          width: 10rem;
     }
 }
 

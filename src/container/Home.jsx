@@ -5,7 +5,7 @@ import Submenu from '../components/Submenu'
 
 const Home = () => {
   return (
-    <div className= 'px-12 sm:px-20 w-full  '>
+    <div className= 'px-12 sm:px-20 w-full relative '>
     <Navbar/>
     <Submenu/>
     <Main/>

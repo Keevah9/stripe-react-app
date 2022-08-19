@@ -9,7 +9,7 @@ const [isSubmenuOpen, setIsSubmenuOpen] = useState(false)
 const [location, setLocation] = useState({}); 
  const [page, setPage] = useState({ page: '', links: [] });
 
-const openSubmenu =({text, coordinates})=>{
+const openSubmenu =(text, coordinates)=>{
    const page = sublinks.find((link) => link.page === text);
    setPage(page);
     setLocation(coordinates)
