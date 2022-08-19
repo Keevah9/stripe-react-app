@@ -1,5 +1,4 @@
 import React,{ useContext, useState} from "react";
-// import { AppContext } from "./Context";
 import sublinks from "../data";
 const AppContext = React.createContext()
 
@@ -24,6 +23,8 @@ const openSidebar = () => {
 const closeSidebar = () => {
   setIsSidebarOpen(false);
 };
+
+
 
 
     return(
