@@ -1,9 +1,7 @@
 import React from 'react'
 import sublinks from '../data'
-import { useGeneralContext } from '../container/Context'
-import {Fatimes} from 'react-icons/fa'
 const Sidebar = () => {
-  // const {isSidebarOpen, closeSidebar} = useGeneralContext()
+
   return (
     <div className='text-left py-8 capitalize  h-full'>
       {sublinks.map((item,index)=>{

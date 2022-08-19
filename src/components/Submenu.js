@@ -1,4 +1,4 @@
-import React, {useEffect,useState, useRef} from 'react'
+import React, {useEffect, useRef} from 'react'
 import {BiUpArrow} from 'react-icons/bi'
 import { useGeneralContext } from '../container/Context'
 
@@ -15,12 +15,15 @@ const Submenu = () => {
   }, [page, location]);
   return (
     <aside
-      className={`${isSubmenuOpen} ? '    absolute top-[4rem] left-40  rounded shadow-xl mt-6 translate-x-[-50%] block : ' hidden' `}
+      className={`${
+        isSubmenuOpen
+          ? " absolute top-[4rem] left-[50%]  mt-6 translate-x-[-50%] block"
+          : "hidden"
+      } `}
       ref={container}
     >
-      {/* <BiUpArrow className="absolute text-white  left-[50%]" /> */}
-      <section className="mt-5  bg-white">
-        
+      <BiUpArrow className="absolute text-white top-0 left-[50%]" size={27} />
+      <section className="mt-8   shadow-xl  rounded-xl bg-white">
         <div className={`' flex py-12  px-4'`}>
           {links.map((link, index) => {
             const { url, icon, label } = link;

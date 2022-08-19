@@ -38,16 +38,6 @@
       background-repeat: no-repeat;
   }
     
-      .link-btn {
-          height: 100%;
-          background: transparent;
-          border-color: transparent;
-          font-size: 1.1rem;
-          color: white;
-          text-transform: capitalize;
-          letter-spacing: 1px;
-          width: 10rem;
-    }
 }
 
 @tailwind components;

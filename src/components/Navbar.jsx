@@ -16,20 +16,20 @@ export const Menu=()=>{
   }
   const handleDisplay =(e)=>{
     console.log(e.target)
-    if(!e.target.classList.contains('link-btn')){
+    if(!e.target.classList.contains('capitalize')){
       closeSubmenu()
     }
   }
   return(
     <ul className='sm:flex gap-12 justify-center items-center ' onMouseOver={handleDisplay}>
     <li>
-      <button className='px-8 capitalize link-btn' onMouseOver={display}>products</button>
+      <button className='px-8 capitalize' onMouseOver={display}>products</button>
     </li>
     <li>
-      <button className='px-8 capitalize link-btn' onMouseOver={display}>developers</button>
+      <button className='px-8 capitalize' onMouseOver={display}>developers</button>
     </li>
     <li>
-      <button className='px-8 capitalize link-btn' onMouseOver={display}>company</button>
+      <button className='px-8 capitalize' onMouseOver={display}>company</button>
     </li>
   </ul>
   )
@@ -49,8 +49,8 @@ const Navbar = () => {
       
 {menuToggle && (
         
-        <div className='sm:hidden block absolute right-0 text-center px-8 bg-gray-500 top-0  w-full h-full text-black'>
-          <div className='p-12 relative  bg-white w-full h-full'>
+        <div className='sm:hidden block absolute right-0 text-center px-8 bg-gray-500 top-0  w-full h-screen text-black'>
+          <div className='p-12 relative my-8 bg-white w-full h-full'>
          <AiOutlineClose  size={30} onClick={()=> setMenuToggle(false)} className='absolute right-10'/>
           <Sidebar/>
           </div>
